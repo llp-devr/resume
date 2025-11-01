@@ -25,3 +25,4 @@ jobs:
       with:
         name: PDF
         path: resume--leonardo-lopes-pereira.pdf
+        retention-days: 15
