@@ -24,5 +24,5 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: PDF
-        path: resume--leonardo-lopes-pereira.pdf
+        path: resume.pdf
         retention-days: 15
