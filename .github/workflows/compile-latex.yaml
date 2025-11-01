@@ -17,7 +17,7 @@ jobs:
       uses: xu-cheng/latex-action@v3
       with:
         root_file: resume.tex
-        latex_compiler: pdflatex
+        compiler: pdflatex
         args: -pdf -interaction=nonstopmode -file-line-error
 
     - name: Upload PDF as artifact
