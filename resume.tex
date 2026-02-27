@@ -1,70 +1,56 @@
-\documentclass[11pt,a4paper,sans]{moderncv}
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
 
-\usepackage{expl3}
-\expandafter\def\csname ver@l3regex.sty\endcsname{}
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+\documentclass[11pt, a4paper]{awesome-cv}
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+\fontdir[fonts/]
 
-\moderncvstyle{banking}
-\moderncvcolor{green}
-\nopagenumbers{}
+% Options: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink,
+% awesome-orange, awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-red}
 
-\usepackage[utf8]{inputenc}
-\usepackage[scale=0.80]{geometry}
-\usepackage{fontawesome5}
+\setbool{acvSectionColorHighlight}{false}
 
-\name{Leonardo Lopes}{Pereira}
-\title{Back-end Developer}
-\phone[mobile]{+55~84~9~8116~1601}
-\phone[mobile]{+33~07~69~56~96~98}
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%-------------------------------------------------------------------------------
+\name{Leonardo}{Pereira}
+\position{Software Engineer}
+
+\whatsapp{+33 7 69 56 96 98}
 \email{leonardolopespereira@outlook.com}
-\social[linkedin]{leonardo-lopes-pereira}
-\social[github]{llp-devr}
+\github{llp-devr}
+\linkedin{leonardo-lopes-pereira}
+% \hackerrank{hackerrank-id}
+% \extrainfo{extra information}
 
+% \quote{``Be the change that you want to see in the world."}
+
+%-------------------------------------------------------------------------------
+%	DOCUMENT STRUCTURE
+%-------------------------------------------------------------------------------
 \begin{document}
-\makecvtitle{}
 
-\section{Professional Experience}
-\cventry{2023 -- Present}{Zup IT}{Back-End Developer}{StackSpot Project}{}{
-Delivered and evolved core backend systems for StackSpot’s cloud platform, enabling secure, scalable, and reliable cloud resource management
-at enterprise scale. Drove architectural and implementation improvements that reduced infrastructure setup and provisioning time by approximately
-70\%, significantly accelerating developer productivity and time-to-market. Played a key role in defining and enforcing backend architecture
-standards, ensuring long-term scalability, maintainability, and code quality. Acted as a second-level support reference for critical production
-issues, contributing to high platform availability and operational stability. Leveraged Kubernetes and Crossplane for infrastructure orchestration,
-with services implemented in Kotlin and Golang, and designed an event-driven architecture using PostgreSQL, DynamoDB, Redis, SQS, and Kafka.
-}
-\cventry{2020 -- 2023}{AUDITA!}{Co-founder}{Lead Developer}{}{
-Co-founded and led the technical execution of a fintech startup focused on automated tax review for Brazilian companies. Architected and built
-a data analysis platform that transformed a fully manual tax review process from ~30 days to under 3 hours, unlocking faster insights and
-materially improving client cash recovery potential. Owned the end-to-end system design and implementation, balancing performance, accuracy,
-and scalability. Employed Rust for high-performance document parsing, Python for large-scale data processing and analytics, and PostgreSQL
-as the core data platform.
-}
+\makecvheader
 
-\section{Education}
-\cventry{2024 -- Present}{École 42}{Expert en Architecture Numérique}{Paris}{France}{Engaged in a formal qualification program focused on AI and low-level systems programming through hands-on, project-based learning in a collaborative, peer-driven environment.}
-\cventry{2015 -- 2017}{UFRN}{Postgraduate Specialist in Tax Law}{Natal}{Brazil}{}
-\cventry{2006 -- 2011}{UFRN}{Bachelor of Laws}{Natal}{Brazil}{}
+\makecvfooter
+{}
+{Leonardo Lopes Pereira~~~·~~~Curriculum Vitae}
+{\thepage}
 
-\section{Certification}
-\cventry{2026}{C++ Institute}{CLA - C Certified Associate Programmer}{}{}{}
-\cventry{2026}{C++ Institute}{CLE – C Certified Entry-Level Programmer}{}{}{}
-\cventry{2024}{AWS}{AWS Certified Developer – Associate}{}{}{}
-\cventry{2023}{Python Institute}{PCEP – Certified Entry-Level Python Programmer}{}{}{}
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%-------------------------------------------------------------------------------
+\input{cv/summary.tex}
+\input{cv/skills.tex}
+\input{cv/experience.tex}
+\input{cv/certificates.tex}
+\input{cv/education.tex}
+\input{cv/languages.tex}
 
-\subsection{Additional Certifications}
-\cventry{2025}{CodinGame}{Kotlin Certification}{}{}{}
-\cventry{2025}{CodinGame}{C Certification}{}{}{}
-\cventry{2025}{EF SET}{English - C1 Advanced}{}{}{}
-\cventry{2024}{Pearson VUE}{English for IT B2 / GSE 59-75}{}{}{}
-
-\section{Skills}
-\cvitem{Programming Languages}{C, C++, Go, Kotlin, Java, Python, Rust}
-\cvitem{Tools \& Platforms}{AWS, Crossplane, Docker, Git, Kubernetes, Terraform}
-\cvitem{Soft Skills}{Effective Communication, Leadership, Team Collaboration, Critical Thinking, Adaptability, Time Management}
-
-\section{Languages}
-\cventry{}{Portuguese}{Native}{}{}{}
-\cventry{}{English}{C1}{}{}{}
-\cventry{}{French}{A1}{}{}{}
-\cventry{}{German}{A1}{}{}{}
-
+%-------------------------------------------------------------------------------
 \end{document}
