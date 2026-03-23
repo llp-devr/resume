@@ -5,22 +5,30 @@
 	%---------------------------------------------------------
 
 	\cventry
-	{Back-end Developer}
-	{Zup IT – StackSpot Project}
+	{Software Engineer}
+	{Zup IT}
 	{Brazil}
 	{2023 -- Present}
 	{
-		\begin {cvitems}
-		\item Architected and delivered core backend services for StackSpot’s cloud platform using Kotlin and Go, enabling secure, scalable cloud resource provisioning for enterprise clients
-		\item Drove a 70\% reduction in infrastructure setup and provisioning time by redesigning orchestration workflows with Kubernetes and Crossplane, directly accelerating developer productivity and time-to-market
-		\item Engineered event-driven microservices processing high-throughput workloads using Kafka, SQS, PostgreSQL, DynamoDB, and Redis, maintaining 99\%+ platform uptime
-		\item Defined and enforced backend architecture standards across the engineering organization, improving code quality, reducing technical debt, and ensuring long-term maintainability
-		\item Served as second-level escalation engineer for critical production incidents, diagnosing and resolving complex distributed system failures under SLA pressure
+		\begin{cvitems}
+			\item \textbf{Project: Foundation (Current)}
+			\begin{itemize}
+				\item Engineered a multi-cloud orchestration engine using \textbf{Kubernetes controllers in Go}, based on a declarative infrastructure model and a unified state abstraction across cloud providers.
+				\item Developed idempotent reconciliation loops to synchronize desired and actual state between \textbf{Kubernetes Custom Resources (CRDs)} and cloud APIs, reducing infrastructure setup time by 70\%.
+				\item Designed inter-controller coordination to manage resource dependencies and lifecycle ordering, ensuring consistent and fault-tolerant system behavior.
+				\item Built a \textbf{Kotlin / Spring Boot} BFF to expose infrastructure capabilities via a secure, policy-driven API, enabling full auditability of changes and user-level traceability without direct Kubernetes access.
+			\end{itemize}
+			\item \textbf{Project: StackSpot Cloud Services}
+			\begin{itemize}
+				\item Designed and implemented backend services in \textbf{Kotlin} to manage multi-account AWS infrastructure for enterprise clients.
+				\item Built event-driven microservices using \textbf{SQS, PostgreSQL, and Elasticsearch}, supporting reliable cloud resource operations with 99\%+ uptime.
+				\item Implemented \textbf{Elasticsearch}-based indexing to provide real-time visibility into thousands of managed cloud resources.
+			\end{itemize}
 		\end{cvitems}
 	}
-
+	
 	\cventry
-	{Co-founder \& Lead Developer}
+	{Co-founder \& Founding Engineer}
 	{AUDITA!}
 	{Brazil}
 	{2020 -- 2023}
